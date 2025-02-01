@@ -1,0 +1,20 @@
+<div class="text-center container d-flex justify-content-center align-items-center"style="height: 100vh;">
+    <form class="form-signin border p-5 rounded">
+        <h1 class="h3 mb-3 font-weight-normal text-white">LiveClass.com</h1>
+        <h2 class="h3 mb-3 font-weight-normal text-white">Sign in</h2>
+        <label for="inputEmail" class="sr-only mb-2 text-white">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" [(ngModel)]="user.email" placeholder="Email address" name="email" required autofocus>
+        <label for="inputPassword" class="sr-only text-white">Password</label>
+        <input type="password" id="inputPassword" class="form-control" [(ngModel)]="user.password" placeholder="Password" name="password" required>
+        <div class="checkbox mb-3">
+            <label class="text-white"><input type="checkbox" value="remember-me"> Remember me</label>
+        </div>
+        <div>
+            <button class="btn btn-md btn-light btn text-dark" style="width: 100%;" type="submit" (click)="register()">Sign in</button>
+        </div>
+        <div>
+            <button class="btn btn-secondary btn-md btn-dark mt-2" style="width: 100%;" type="submit" routerLink="/signup">Create an account</button>
+        </div>
+        <p class="mt-5 mb-3 text-muted">&copy; 2025 </p>
+    </form>
+</div>

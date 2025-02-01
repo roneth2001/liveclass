@@ -1,0 +1,39 @@
+<div class=" container container d-flex justify-content-center align-items-center text-white"style="height: 100vh;">
+    <div class="border rounded" style="width: 75%;">
+        <div class="text-center mb-3">
+            <h1>Create a new Class</h1>
+        </div>
+        <div class="form ms-2" style="font-size: 25px;">
+            <div class="raw mb-2">
+                <label for="LectuerID" class="me-1">Lectuer ID: </label>
+                <input type="text" name="LectuerID" id="classteacher" width="100%" class="rounded bg-transparent border border-light ms-2 text-white" style="width: 50%;" [(ngModel)]="class.id">
+            </div>
+            <div class="raw mb-2">
+                <label for="LectuerName" class="me-1">Lectuer Name: </label>
+                <input type="text" name="LectuerName" id="LectuerName" class="rounded bg-transparent border border-light ms-2 text-white" style="width: 50%;" [(ngModel)]="class.lec_name">
+            </div>
+            <div class="raw mb-2">
+                <label for="classteacher" class="me-1">Class Name: </label>
+                <input type="text" name="classteacher" id="classteacher" width="100%" class="rounded bg-transparent border border-light ms-2 text-white" style="width: 50%;" placeholder="e.g. 'Grade 11 Science'" [(ngModel)]="class.class_name">
+            </div>
+            <div class="raw mb-2">
+                <label for="classteacher" class="me-1">Day: </label>
+                <input type="text" name="classteacher" id="classteacher" width="100%" class="rounded bg-transparent border border-light ms-2 text-white" style="width: 50%;"  [(ngModel)]="class.day">
+            </div>
+            <div class="raw mb-2">
+                <label for="classTime" class="me-1">Stating Time: </label>
+                <input type="text" name="classteacher" id="classTime" width="100%" class="rounded bg-transparent border border-light ms-2 text-white" style="width: 50%;"[(ngModel)]="class.starting_time">
+            </div>
+            <div class="raw mb-2">
+                <label for="classDuration" class="me-1">Duration: </label>
+                <input type="text" name="classDuration" id="classTime" width="100%" class="rounded bg-transparent border border-light ms-2 text-white" style="width: 50%;"[(ngModel)]="class.duration">
+            </div>
+        </div>
+        <div class="raw">
+            <div class="d-flex align-items-end justify-content-center mb-4 mt-4">
+                <button class="btn btn-dark" type="button" style="width: 25%;" (click)="createclass()">Submit</button>
+            </div>
+        </div>
+        
+    </div>
+</div>

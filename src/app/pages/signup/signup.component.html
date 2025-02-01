@@ -1,0 +1,57 @@
+<form class="container border text-white p-4 " style="margin-top: 20vh; max-height: 100vh;">
+    <div class="text-center row mb-3">
+        <h1>Sign Up</h1>
+    </div>
+    <div class="row" style="font-size: 18px;">
+        <div class="col-lg-8">
+            <div>
+                <label for="accountType">Account type: </label>
+                <select name="accountType" class="rounded bg-transparent border border-light ms-2 text-white" style="width: 30%;" [(ngModel)]="user.accountType">
+                    <option value="Student" class="text-dark">Student</option>
+                    <option value="Lectuer" class="text-dark">Lectuer</option>
+                </select>
+            </div>
+            <div>
+                <label for="name" class="mt-2">Name: </label>
+                <input type="text" name="name" id="firstName" class="rounded bg-transparent border border-light ms-2" [(ngModel)]="user.firstName">
+                <input type="text" name="name" id="lastName" class="rounded bg-transparent border border-light ms-2"[(ngModel)]="user.lastName">
+            </div>
+            <div>
+                <label for="email" class="mt-2">Email: </label>
+                <input type="email" name="email" id="email" class="rounded bg-transparent border border-light ms-2" style="width: 80%;"[(ngModel)]="user.email">
+            </div>
+            <div>
+                <label for="password" class="mt-2">Password: </label>
+                <input type="password" name="password" id="password" class="rounded bg-transparent border border-light ms-2" style="width: 80%;" [(ngModel)]="user.password">
+            </div>
+            <div>
+                <label for="address" class="mt-2">Address: </label>
+                <input type="text" name="address" id="address" style="width: 80%;" class="rounded bg-transparent border border-light ms-2" [(ngModel)]="user.address">
+            </div>
+            <div>
+                <label for="dateofbirth" class="mt-2">Date of Birth: </label>
+                <input type="date" name="dateofbirth" id="dateofbirth" style="width: 80%;" class="rounded bg-transparent border border-light ms-2" placeholder="yyyy-mm-dd" [(ngModel)]="user.dateOfBirth">
+            </div>
+            <div class="mt-2">
+                <label for="genderType">Gender: </label>
+                <select name="genderType" class="rounded bg-transparent border border-light ms-2 text-white" style="width: 30%;" [(ngModel)]="user.gender">
+                    <option value="Student" class="text-dark">Male</option>
+                    <option value="Lectuer" class="text-dark">Female</option>
+                </select>
+            </div>
+            <div>
+                <label for="telno" class="mt-2">Mobile No: </label>
+                <input type="text" name="telno" id="telno" style="width: 80%;" class="rounded bg-transparent border border-light ms-2" [(ngModel)]="user.mobileNumber">
+            </div>
+            <div>
+                <label for="lecedu" class="mt-2">Last Edu. Qualification #: </label>
+                <input type="text" name="lecedu" id="lecedu" style="width: 60%;" class="rounded bg-transparent border border-light ms-2" placeholder="(Dip/HND/Bachelor/MSc/PhD)"[(ngModel)]="user.eduQualification">
+            </div>
+            <p class="mt-2 ms-5"># : Only Lecturers want to fill</p>
+        </div>
+        <div class="col-lg-4 d-flex align-items-end justify-content-center mb-4">
+            <button class="btn btn-dark" type="button" style="width: 50%;">Submit</button>
+        </div>
+    </div>
+</form>
+

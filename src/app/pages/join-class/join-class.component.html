@@ -1,0 +1,25 @@
+<div class=" container container d-flex justify-content-center align-items-center text-white"style="height: 100vh;">
+    <div class="border rounded" style="width: 50%;">
+        <div class="row text-center">
+            <h2>Join with a new class</h2>
+        </div>
+        <div class="m-3">
+            <div>
+                <label for="classid">Class teachers' Email:</label>
+                <input type="email" name="classid" id="clzid" class="rounded bg-transparent border border-light ms-2 text-white m-2" style="width: 70%; " required [(ngModel)]="joinclass.classid">
+            </div>
+            <div>
+                <label for="className">Class Name:</label>
+                <input type="text" name="className" id="clzName" class="rounded bg-transparent border border-light ms-2 text-white m-2" style="width: 80%; " required [(ngModel)]="joinclass.classname">
+            </div>
+            <div>
+                <label for="classTeacher">Class Teacher name:</label>
+                <input type="text" name="classTeacher" id="clzteacherid" class="rounded bg-transparent border border-light ms-2 text-white m-2" style="width: 71%;" required [(ngModel)]="joinclass.classTeacherName">
+            </div>
+            
+        </div>
+        <div class="d-flex align-items-end justify-content-center mt-2 mb-4">
+            <button class="btn btn-dark" type="button" style="width: 50%;" (click)="joinClass()">Submit</button>
+        </div>
+    </div>
+</div>
